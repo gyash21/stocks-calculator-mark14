@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗠</text></svg>">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Stocks Calculator
+        </h1>
+        <p>Mention your stock details to calculate your net profit/loss</p>
+    </header>
+    <label for="buy">Buying Price</label>
+    <input id="buy" placeholder="in rupees" type="number" />
+
+    <label for="quantity">Quantity</label>
+    <input id="quantity" placeholder="quantity" type="number" min="1" pattern="[0-9]"
+        onkeypress="return !(event.charCode == 46)" />
+
+    <label for="sell">Selling Price</label>
+    <input id="sell" placeholder="in rupees" type="number" />
+
+    <div class="container">
+        <button id="btn-calculate">find out</button>
+    </div>
+
+    <p id="output">enter details for output</p>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
